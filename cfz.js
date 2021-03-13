@@ -51,11 +51,11 @@ let tc = 0
 function execTask() {
   return new Promise(async resolve => {
     try {
-		await $.wait(1000)
+		await $.wait(2000)
 		for (let i = 0; i < 10; i++) {   
 			$.log(`春风转开始执行循环阅读，本次共执行10次，已执行${i+1}次`)
 			await cfzqd()
-			let sjs = 60000+Math.floor(Math.random()*10000); //随机等待60秒到70秒
+			let sjs = 70000+Math.floor(Math.random()*30000); //随机等待60秒到70秒
 			await $.wait(sjs)
 		  }
 		await cfzrw1() 
